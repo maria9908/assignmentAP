@@ -1,13 +1,12 @@
 ## App module
-This is the final Android application module. It contains all
-Android specific code and uses the logic module for the game. To get started you will have to create
-a new activity for the app (preferably with the new activity wizzard).
+Author: s5114692
+Assessment: AP Assignment
+Date: 6/05/2020
 
-**Note** Do not forget to mark an activity as main by adding into the activity tag the following:
-```xml
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+ 
+From the code provided I have implemented most of the required TO-DOs and have passed 
+some of the unit tests.
+For the UI I have chosen suitable colour palette and have implemented a splash screen, 
+the grid of dots, player pointers and a refresh button.
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-```
+
