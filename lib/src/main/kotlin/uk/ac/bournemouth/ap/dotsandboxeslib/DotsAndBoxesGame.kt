@@ -10,6 +10,7 @@ import uk.ac.bournemouth.ap.dotsandboxeslib.matrix.SparseMatrix
  * is different.
  */
 interface DotsAndBoxesGame {
+
     /**
      * A key part of the game are the lines that the user can click/draw. It is probably best to use
      * a structure such as the [SparseMatrix] type for this. That allows for x/y access but iterating

@@ -14,7 +14,9 @@ abstract class AbstractDotsAndBoxesGame: DotsAndBoxesGame {
     private val onGameChangeListeners = mutableListOf<DotsAndBoxesGame.GameChangeListener>()
 
     override fun addOnGameOverListener(listener: DotsAndBoxesGame.GameOverListener) {
-        onGameOverListeners.add(listener)
+        if (listener !in onGameOverListeners ) {
+            onGameOverListeners.add(listener)
+        }
     }
 
     override fun addOnGameChangeListener(listener: DotsAndBoxesGame.GameChangeListener) {
@@ -60,6 +62,7 @@ abstract class AbstractDotsAndBoxesGame: DotsAndBoxesGame {
      */
     abstract inner class AbstractLine(val pos: Coordinate<Line>): Line {
         constructor(lineX: Int, lineY: Int): this(Coordinate(lineX, lineY))
+
 
         final override val lineX: Int get() = pos.x
         final override val lineY: Int get() = pos.y
